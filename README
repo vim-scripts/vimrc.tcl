@@ -1,0 +1,29 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=33
+
+This small hack requires Tcl to be compiled into your
+copy of Vim.
+
+The default settings will allow this hack to work on
+the default SQL*Plus temp file, afiedt.buf, only.
+
+To use simply highlight the query you would like to
+run and press Enter.  You should drop back down to
+SQL*Plus.  Do the usual '/' and your good to go.
+
+Have not tried this hack with PL/SQL or multiple
+Query's but I cannot see why it won't work, or why it
+would for that matter.
+
+BUGS
+----
+1) :wq causes an error message about writing the file.
+   Safe to ignore but would be nice to get rid of this.
+
+2) No checks to make sure you have highlighted a valid
+   Query.  Hence all hell breaks loose if you don't.
+
+3) You *HAVE* to have a trailing ';' on your Query for
+   this hack to work.  Would be nice if you didn't have
+   to have that.  Would also be nice if you could run
+   a group of statements.
+
